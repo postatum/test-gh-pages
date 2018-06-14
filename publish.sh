@@ -7,9 +7,9 @@ echo "publish >> Building HTML"
 gitbook build
 echo "publish >> Cloning repo with gh-pages"
 git clone -b gh-pages $GH_PAGES_REPO $GH_PAGES_FOLDER
-echo "publish >> Copying gitbook html"
-git pull origin gh-pages
 cd $GH_PAGES_FOLDER
+git pull origin gh-pages
+echo "publish >> Copying gitbook html"
 cp -R ../_book/* .
 echo "publish >> Commiting"
 git add .
