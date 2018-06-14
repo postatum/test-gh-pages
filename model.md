@@ -2,13 +2,13 @@
 
 AMF provides an object oriented model to build, modify, and traverse through units and elements. Each plugin exposes different classes matching specific domains.
 
-##Fields
+## Fields
 
 Fields on classes are usually wrapped with a convenient class to avoid the use of `null / undefined`. These field wrappers are defined on package ```amf.client.model```.
 
 Available field wrappers are `StrField`, `IntField`, `BoolField`, `DoubleField`, `FloatField`, and `AnyField`.
 
-###Accessing defined field
+### Accessing defined field
 
 
 ```Java
